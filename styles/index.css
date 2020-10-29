@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+
+}
+/* to clear floats (if I forget I'm using them) */
+.clear{
+    clear: both;
+}
+section{
+    margin: 10px 0;
+}
+/*--------------------- navigattion bar----------------------------*/
+.topmenu{
+    background-color: #ffefd6;
+    top:0;
+    position: fixed;
+    width: 100%;
+    /* to make sure everything scrolls under navigation */
+    z-index: 999;
+
+}
+.name{
+    float: left;
+    padding: 25px;
+    
+    font-size: 1.8em;
+}
+.name a{
+    display: block;
+    text-decoration: none;
+    color: #6c9198;
+    
+}
+
+.nav{
+    float: right;
+    margin: 0;
+    padding: 0;
+    background-color: #6c9198;
+}
+
+.nav li{
+    list-style-type: none;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    height: 30px;
+    
+}
+
+.nav li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    /* 14px = top and bottom 16px = left and right  */
+    padding: 14px 16px; 
+}
+
+.nav li:hover{
+    
+    background-color: #d6e8eb;
+}
+.nav li a:hover{
+    color: #b1c0c3;
+}
+#wrapper{
+    margin-top: 80px;
+}
+/* -----------------------------hero section--------------------------------- */
+
+.hero{
+    background-image: url(https://images.pexels.com/photos/2410300/pexels-photo-2410300.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+}
+.hero h1{
+    font-size: 5em;
+    /* 1em = 16px */
+    text-transform: uppercase;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    text-align: center;
+    text-shadow: 2px 2px white;
+    padding-bottom: 30px;
+}
+.hero h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    position: relative;
+    top: 55px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px white;
+}
+.hero div{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    top: 85px;
+    text-align: center;
+} 
+.btn{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: #b1c0c3;
+    border-radius: 25px;
+    height: 40px;
+  
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px white;
+}
+
+.btn:hover{
+
+    color: white;
+    border: 1px solid #b1c0c3;
+    height: 42px;
+    cursor: pointer;
+    
+}
+.btn:active{
+    box-shadow: 4px 4px #ffefd6;
+}
+ 
+/* -----------------------------about section--------------------------------- */
+section {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .about, .facts {
+    width: 100%;
+    background-color: #6c9198;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    color: black;
+    
+  }
+  
+
+  /* ----------video------------- */
+.hero-video{
+    background-image: url(https://images.unsplash.com/photo-1540998145333-e2eef1a9822d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60://images.pexels.com/photos/https://images.unsplash.com/photo-1540998145333-e2eef1a9822d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1533&q=80/pexels-photo-2410300.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    min-height: 650px;
+    margin-bottom: 0;
+    background-position: center;
+    background-size: cover;
+}
+  #video{
+      padding-top: 10px;
+      margin: 0 auto;
+
+  }
+  .video{
+    width: 560px;
+    height: 315px;
+    border: none;
+  }
+  .hero-video h2{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3em;
+    color: white;
+    text-shadow: 4px 4px black;
+  }
+  .hero-video div{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    top: 10px;
+    text-align: center;
+}
+/* -----------------------------footer section--------------------------------- */
+
+.footer{
+    background-color: #ffefd6;
+    margin: 0 auto;
+    text-align: center;
+    height: 300px;
+    padding: 20px;
+    color: black;
+}
+.logo{
+    justify-content: center;
+}
+.fa-instagram-square, .fa-facebook-square, .fa-youtube-square, .fa-twitter-square{
+    color: #6c9198;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fa-instagram-square:hover, .fa-facebook-square:hover, .fa-youtube-square:hover, .fa-twitter-square:hover{
+    color: #d6e8eb;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* tablet sized */
+@media all and (max-width:1200px){
+    .name{
+        width: 100%;
+        text-align: center;
+    }
+    .nav{
+        width: 100%;
+    }
+    #wrapper{
+        margin-top: 150px;
+    }
+    .footer{
+        height: 300px;
+        padding: 10px;
+    }
+    
+    .hero h1{
+        font-size: 2em;
+        width: 100%;
+    }
+    section {
+        flex-direction: column;
+      }
+      .about, .facts {
+        max-width: 90%;
+        width: auto;
+      }
+
+}
+/* phone size */
+@media all and (max-width:590px){
+    .footer{
+        height: 300px;
+        padding: 0px;
+    }
+    #wrapper, .topmenu{
+        min-width: 320px;
+    }
+    .nav li{
+        padding: 20px;
+        height: 10px;
+    }
+    
+    .nav li a{
+        padding: 0px 0px; 
+    }
+    .name{
+        padding: 10px;
+    }
+    #wrapper{
+        margin-top: 100px;
+    }
+    section {
+        flex-direction: column;
+      }
+    .about, .facts {
+        max-width: 90%;
+        width: auto;
+    }
+    .video{
+        
+        width: 250px;
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+
+
+
+
